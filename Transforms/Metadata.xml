@@ -1,0 +1,18 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.firebase.client']/interface[@name='ValueEventListener']/method[@name='onCancelled']" name="argsType">CancelledValueEventArgs</attr>
+  <attr path="/api/package[@name='com.firebase.client.core.view.filter']/class[@name='IndexedFilter']" name="name">IndexFilter</attr>
+  <attr path="/api/package[@name='com.firebase.client.snapshot']/class[@name='DeferredValueNode']/method[@name='updatePriority' and count(parameter)=1 and parameter[1][@type='com.firebase.client.snapshot.Node']]" name="name">updatePriorityInternal</attr>
+  <attr path="/api/package[@name='com.firebase.client.snapshot']/class[@name='StringNode']/method[@name='updatePriority' and count(parameter)=1 and parameter[1][@type='com.firebase.client.snapshot.Node']]" name="name">updatePriorityInternal</attr>
+  <attr path="/api/package[@name='com.firebase.client.snapshot']/class[@name='LongNode']/method[@name='updatePriority' and count(parameter)=1 and parameter[1][@type='com.firebase.client.snapshot.Node']]" name="name">updatePriorityInternal</attr>
+  <attr path="/api/package[@name='com.firebase.client.snapshot']/class[@name='DoubleNode']/method[@name='updatePriority' and count(parameter)=1 and parameter[1][@type='com.firebase.client.snapshot.Node']]" name="name">updatePriorityInternal</attr>
+  <attr path="/api/package[@name='com.firebase.client.snapshot']/class[@name='BooleanNode']/method[@name='updatePriority' and count(parameter)=1 and parameter[1][@type='com.firebase.client.snapshot.Node']]" name="name">updatePriorityInternal</attr>
+  <remove-node path="/api/package[@name='com.firebase.client.core']/interface[@name='PersistentConnection.RequestResultListener']" />
+  <remove-node path="/api/package[@name='com.firebase.client.core']/interface[@name='PersistentConnection.ResponseListener']" />
+</metadata>
